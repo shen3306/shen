@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shen</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <style>
+        .navbar-s {
+            background-color: #000;
+            border-color: #000;
+        }
+
+        .btn-shen-search:active:focus,
+        .btn-shen-search:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .btn-shen-search:focus {
+            outline: none;
+            border-color: #ccc;
+
+            box-shadow: none;
+        }
+
+        body {
+            padding-top: 50px;
+        }
+
+
+
+        .carousel-shen img {
+            width: 100%;
+
+        }
+
+        .main-content {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .courses img {
+            width: 100%;
+        }
+
+        .page-footer {
+            padding: 40px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .page-footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .page-footer h3 {
+            font-size: 1.5rem;
+        }
+
+        .footer-copyright {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-s navbar-fixed-top">
+
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Shen</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">教程</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">视频 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML5</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">javascript</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">jquery</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">bootstrap</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group input-group-s">
+                        <input type="text" class="form-control " placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-shen-search" type="button">
+                                <i class="glyphicon glyphicon-hand-left"> </i>
+                            </button>
+                        </span>
+                    </div><!-- /input-group -->
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 轮播 -->
+    <div id="carousel-example-generic" class="carousel slide carousel-shen" data-ride="carousel">
+        <!-- 按钮 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <!-- 响应式 宽度不同 图片不同 -->
+                <picture>
+                    <source srcset="./images/play01.jpg" media="(min-width:992px)">
+                    <source srcset="./images/play01-sm.jpg" media="(min-width:768px)">
+                    <!-- 默认图片 小于768px-->
+                    <img src="./images/play01-xs.jpg">
+                </picture>
+
+                <div class="carousel-caption">
+                    <h2>第一部分</h2>
+                    <p>
+                        得平啦月病徒一胆陀杂次，老拿烦无未二厅听己药死是互拿纯的卅看叩，量事切有头，秦国了洪者司讨。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="./images/play02.jpg" media="(min-width:992px)">
+                    <source srcset="./images/play02-sm.jpg" media="(min-width:768px)">
+                    <!-- 默认图片 小于768px-->
+                    <img src="./images/play02-xs.jpg">
+                </picture>
+                <div class="carousel-caption">
+                    <h2>第二部分</h2>
+                    <p>
+                        极秦评人么不楚洪助我没，后我洪韩狂应持，程冈宋貂罪法，韩派揽君那非，中是帝嗣密许韩身灰人行是此廿都憾汪，得平啦月病徒一胆陀杂次，老拿烦无未二厅听己药死是互拿纯的卅看叩，量事切有头，秦国了洪者司讨。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="./images/play03.jpg" media="(min-width:992px)">
+                    <source srcset="./images/play03-sm.jpg" media="min-width:768px">
+                    <img src="./images/play03-xs.jpg" alt="...">
+                </picture>
+
+                <div class="carousel-caption">
+                    <h2>第三部分</h2>
+                    <p>
+                        中是帝嗣密许韩身灰人行是此廿都憾汪，得平啦月病徒一胆陀杂次，老拿烦无未二厅听己药死是互拿纯的卅看叩，量事切有头，秦国了洪者司讨。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- 主要内容 -->
+    <div class="main-content container">
+        <!-- 路径导航 -->
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">课程</a></li>
+            <li class="active">推荐课程</li>
+        </ol>
+        <!-- 路径列表 -->
+        <!-- 超小 xs 768px 一行一个
+            小 sm 768-992 一行两个
+            中 md 992-1200 一行三
+            大 lg >1200 一行四 -->
+        <!-- 易懂设备有限  col-xs-12不写也可以默认-->
+        <div class="courses">
+            <div class="row" id="courseBox">
+            </div>
+        </div>
+
+        <!--分页  -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination" id="pageBox">
+                <!-- <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="row">
+                    <div class="item col-md-3 col-sm-6 col-xs-12">
+                        <h3>用户</h3>
+                        <ul>
+                            <li>账户修改</li>
+                            <li>下载中心</li>
+                            <li>订单跟踪</li>
+                            <li>用户评价</li>
+                        </ul>
+                    </div>
+                    <div class="item col-md-3 col-sm-6 col-xs-12">
+                        <h3>内容</h3>
+                        <ul>
+                            <li>账户修改</li>
+                            <li>下载中心</li>
+                            <li>订单跟踪</li>
+                            <li>用户评价</li>
+                        </ul>
+                    </div>
+                    <div class="item col-md-3 col-sm-6 col-xs-12">
+                        <h3>关于</h3>
+                        <ul>
+                            <li>账户修改</li>
+                            <li>下载中心</li>
+                            <li>订单跟踪</li>
+                            <li>用户评价</li>
+                        </ul>
+                    </div>
+                    <div class="item col-md-3 col-sm-6 col-xs-12">
+                        <h3>联系</h3>
+                        <ul>
+                            <li>账户修改</li>
+                            <li>下载中心</li>
+                            <li>订单跟踪</li>
+                            <li>用户评价</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">&copy;1064</div>
+        </div>
+    </footer>
+
+
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">邮箱</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">密码</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 记住密码
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">提交</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script>
+        // (function(){})
+        (() => {
+
+            $('#pageBox').on('click','a',function(event){
+                getCourse(this.dataset.page);
+                console.log(this.dataset.page);
+                event.preventDefault();
+            })
+
+            //调用
+            getCourse();
+
+
+
+
+
+
+            //获取课程信息，参数一第几页数据，参数二是每页多少条数据
+            function getCourse(no,size) {
+                //向后端api发送ajax请求
+                axios
+                    .get('http://api.fuming.site:54254/course', {
+                        params: {
+                            pageNo: no,
+                            pageSize: 8,
+                        }
+                    })
+                    .then(res => {
+                        console.log('获取数据成功', res.data);
+                        //课程列表信息
+                        const htmlData = res.data.data.map(item => `  <div class="courses-item col-lg-3 col-md-4  col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="${item.img}" alt="...">
+                        <div class="caption">
+                            <h5>${item.title}</h5>
+                            <p>若穿玉尺，系君回至。................</p>
+                            <p><a href="#" class="btn btn-info" role="button">购买</a> 
+                                <a target="_blank" href="${item.href}" class="btn btn-success" role="button">试看</a></p>
+                        </div>
+                    </div>
+                </div>`
+                        ).join('');
+                    $('#courseBox').html(htmlData);
+
+                        //分页信息
+                        let pageData = `<li>
+                    <a href="#" aria-label="Previous" data-page="${res.data.pageNo-1}">
+                        <span aria-hidden="true">上一页</span>
+                    </a>
+                </li>`;
+                    for (let i = 1; i <= res.data.pageSum; i++) {
+                            pageData += `<li class="${i === res.data.pageNo ? 'active' : ''}" ><a data-page="${i}" href="#">${i}</a></li>`
+                    }
+                        pageData += `<li>
+                    <a href="#" aria-label="Next" data-page="${res.data.pageNo+1}"> 
+                        <span aria-hidden="true">下一页</span>
+                    </a>
+                </li>`
+
+                    $("#pageBox").html(pageData)
+                        // console.log(htmlData);
+
+                    })
+                // .catch(() => {
+                //     alert('数据获取失败')
+                // })
+            }
+
+
+
+
+        })();
+    </script>
+</body>
+
+</html>
